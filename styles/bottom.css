@@ -1,0 +1,112 @@
+            .main{
+                display:grid;
+                grid-template-columns:1fr 1fr 1fr;
+                column-gap: 20px;
+            }
+
+            @media (max-width: 750px){
+                .main{
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+
+            @media (min-width: 751px) and (max-width:999px){
+                .main{
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+            }
+
+            @media (min-width: 1000px){
+                .main{
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                }
+            }
+
+            .title{
+                font-weight:700;
+                line-height: 20px;
+                font-size:15px;
+                margin-top:0;
+                margin-bottom:10px;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+
+            .creater{
+                margin-bottom:4px;
+            }
+            .creater,.stats{
+                font-size: 13px;
+                font-weight: 400;
+                color:rgb(96,96,96);
+                margin-top: 0;
+            }
+
+            
+
+            .video{
+                width:100%;
+                display:grid;
+                grid-template-columns: 1fr;
+                margin-bottom: 50px;
+            }
+
+                
+            .thumbnail{
+                width:100%;
+                height:200px;
+                object-fit: cover;
+                
+                display: block;
+            }
+            .pfp{
+                width: 40px;
+                border-radius: 30px;
+                height: 40px;
+            }
+            
+            .videopfp{
+                display:inline-block;
+                vertical-align: top;
+                margin-top: 0;
+                margin-right: 10px;
+                width: 36px;
+
+            }
+
+            .video-info{
+                display:inline-block;
+                margin-top: 0;
+                vertical-align: top;
+            }
+
+            .video-bottom{
+                display:grid;
+                grid-template-columns:50px 1fr;
+                column-gap: 15px;
+                align-items: start;
+                
+            }
+
+            .ytthumbnail{
+                position:relative;
+                margin-bottom: 5px;
+            }
+
+            .video-length{
+                position:absolute;
+                background-color: black;
+                color:white;
+                bottom:22px;
+                right:7px;
+                padding-left:5px;
+                padding-right:5px;
+                padding-top:3px;
+                padding-bottom:3px;
+                font-family:roboto,arial;
+                font-size:12px;
+                font-weight: 500;
+                border-radius:2px;
+            }
